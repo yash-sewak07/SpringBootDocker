@@ -1,7 +1,7 @@
 def containerName="springbootdocker"
 def tag="latest"
-def dockerHubUser="anujsharma1990"
-def gitURL="https://github.com/anujdevopslearn/SpringBootDocker.git"
+def dockerHubUser="yash-sewak07"
+def gitURL="https://github.com/yash-sewak07/SpringBootDocker"
 
 node {
 	def sonarscanner = tool name: 'SonarQubeScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
