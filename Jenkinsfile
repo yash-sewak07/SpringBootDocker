@@ -1,6 +1,6 @@
 def containerName="springbootdocker"
 def tag="latest"
-def dockerHubUser="yash-sewak07"
+def dockerHubUser="yashsewak"
 def gitURL="https://github.com/yash-sewak07/SpringBootDocker"
 
 node {
