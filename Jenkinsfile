@@ -30,4 +30,13 @@ node {
             echo "Image push complete"
         }
     }
+    stage("SonarQube Scan"){
+        withSonarQubeEnv(credentialsId: 'SonarQubeToken') {
+	     sh "${sonarscanner}/bin/sonar-scanner"
+	}
+    }
+	
+    stage("Ansible Deploy"){
+        ansiblePlaybook inventory: 'hosts', playbook: 'deploy.yaml'
+    }
 }
